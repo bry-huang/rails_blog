@@ -2,7 +2,7 @@
 
 <h1>Listing Posts</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Title</th>
@@ -27,6 +27,7 @@
 <% @posts.each do |post| %>
   <% if post.title == 'foo' %>
     <h3>I can't believe it's <%= post.title %>!</h3>
+    <%= @name %>
   <% else %>
     <h3>Oh well <%= post.title %>! you aren't so bad :)</h3>
   <% end %>
